@@ -10,14 +10,14 @@ from keras.layers import *
 from keras.engine import Layer
 from keras.applications.vgg16 import *
 from keras.models import *
-from keras.applications.imagenet_utils import _obtain_input_shape
+from keras_applications.imagenet_utils import _obtain_input_shape
 import keras.backend as K
 import tensorflow as tf
 
-from utils.get_weights_path import *
-from utils.basics import *
-from utils.resnet_helpers import *
-from utils.BilinearUpSampling import *
+from .utils.get_weights_path import *
+from .utils.basics import *
+from .utils.resnet_helpers import *
+from .utils.BilinearUpSampling import *
 
 
 def top(x, input_shape, classes, activation, weight_decay):
